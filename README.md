@@ -1,6 +1,17 @@
 # Rackspace Database Backup
 Automatically create a backup of hosted databases based on schedule.
 
+## Environment Variables
+You can configure the backups using environment variables.
+
+| Name                          | Description
+|-------------------------------|------------------------------------------------------------------
+| RAX_ACCOUNT                   | Rackspace account name
+| RAX_API                       | Rackspace api key
+| RAX_REGION                    | The Rackspace region (default: DFW)
+| BACKUP_NAME                   | The name to use for backups (default: rax-db-backup)
+| MAX_BACKUPS                   | The maximum number of backups for the backup name (default: 30)
+
 ## Unit Files
 
 Trigger the service. (`rax-db-backup.service`)

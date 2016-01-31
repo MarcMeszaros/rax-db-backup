@@ -1,5 +1,5 @@
 FROM python:2.7
-MAINTAINER Marc Meszaros <marc@snapable.com>
+MAINTAINER Marc Meszaros <me@marcmeszaros.com>
 
 RUN virtualenv /src
 RUN /src/bin/pip install envitro pyrax
